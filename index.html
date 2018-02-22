@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Siuvyklėlė</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- jquery datatable -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body ng-app="uzduotis">
+  <div class="container">
+
+    <div class="row">
+        <div class="logo">
+          <img src="logo.jpg" alt="Siuvyklėlė logo" class="img-responsive center-block">
+          <div class="logo-text"> Leksti siuvyklėlė</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <ul class="nav nav-tabs">
+          <li><a id="produktai" href="#!produktai">PRODUKTAI</a></li>
+          <li><a id="uzsakymai" href="#!uzsakymai">UŽSAKYMAI</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 margin-top-30">
+        <div ng-view></div>
+      </div>
+    </div>
+
+  </br>
+  <div class="text-center">
+    <p>© Ieva</p>
+  </div>
+
+  </div>
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- jquery datatable -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- angular -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+  <!-- custom js -->
+  <script type="text/javascript" src='javascript.js'></script>
+  <script type="text/javascript" src='produktai.js'></script>
+  <script type="text/javascript" src='uzsakymai.js'></script>
+</body>
+</html>
